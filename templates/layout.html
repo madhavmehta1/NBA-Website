@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<head>
+    <title>NBA Scores - {{title}} </title>
+
+    <!-- Bootstrap CSS
+    ================================================================-->
+    <link href = "{{ url_for('static', filename = 'stylesheets/bootstrap.min.css') }}" 
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+    crossorigin="anonymous" rel = "stylesheet" type = "text/css"/>
+
+    <!-- Custom CSS
+    ====================================================================-->
+    <link href = "{{ url_for('static', filename = 'stylesheets/
+    style.css') }}" rel = "stylesheet" type = "text/css"/>
+
+    <!-- Metadata
+    ======================================================================================================================-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Get the latest NBA stats right on your home computer. This is way better than ESPN.">
+    <meta name="keywords" content="NBA, basketball, statistics, stats, darkhead31, LeBron James, Lakers">
+    <meta name="author" content="Madhav Mehta">
+    <link rel="shortcut icon" href="">
+</head>
+
+<!-- Navigation Bar 
+====================================================================-->
+<nav class = "navbar navbar-static-top navbar-inverse bg-inverse">
+    <a class = "navbar-brand" href="/">home</a>
+</nav>
+
+<!-- Content of Index.html
+===========================-->
+{% block body %}
+{%endblock %}
+
+<!-- Bootstrap Javasript 
+=============================================================================================-->
+<script src="{{ url_for('static', filename='javascript/jquery.min.js') }}"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous">
+</script>
+<script src="{{ url_for('static', filename='javascript/popper.min.js') }}"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" 
+        crossorigin="anonymous">
+</script>
+<script src="{{ url_for('static', filename='javascript/bootstrap.min.js') }}"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" 
+        crossorigin="anonymous">
+</script>
